@@ -11,3 +11,14 @@
 ```shell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 ```
+
+```
+Get-NetIPAddress
+```
+
+# Joining the Workstation to the domain
+
+
+```shell
+Add-Computer -Domain xyz.com -Credential xyz/Administrator -Force -Restart
+```
